@@ -59,6 +59,7 @@ body {
 .logo-text {
   font-size: 2rem;
   font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav {
@@ -219,7 +220,7 @@ body {
   border: none;
   border-radius: 1.225rem;
   overflow: hidden;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   height: 50vh;
   margin: 2rem 0;
 }
@@ -260,6 +261,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideFromLeft 1s ease forwards;
 }
 
 .company-grid {
@@ -272,6 +274,7 @@ body {
   border-radius: 0.625rem;
   margin-top: 2rem;
   padding: 2rem 2.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .company-logo {
@@ -286,6 +289,12 @@ body {
   height: 20px;
 }
 
-.logo-text {
+.logo-txt {
   font-size: 1rem;
+}
+
+@media screen and (min-width: 698px) {
+  .company-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
